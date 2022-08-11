@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>place order</title>
+    <link rel="stylesheet" href="placeorder.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="form">
+        <form onsubmit="return myorder()" id="myForm">
+          <div class="name">
+            <label for="Name">Name*:</label>
+            <span id="username"></span>
+            <input type="text" id="nameid" autocomplete="off"/>
+          </div>
+          <div class="mail">
+            <label for="email">EMAIL* :</label>
+            <span id="spanmail"></span>
+            <input type="email" id="mailid" autocomplete="off"/>
+          </div>
+          <div class="phone">
+            <label for="Name">PHONE* :</label>
+            <span id="spanphone"></span>
+            <input type="number" min="10001" max="9999999999" id="phoneid"  autocomplete="off"/>
+          </div>
+          <div class="address">
+            <label for="Name">ADDRESS* :</label>
+            <span id="spanaddress"></span>
+            <input type="text" id="addressid" autocomplete="off" />
+          </div>
+          <div class="city">
+            <label for="Name">CITY* :</label>
+            <span id="spancity"></span>
+            <input type="text" id="cityid"  autocomplete="off"/>
+          </div>
+          <div class="pcode">
+            <label for="Name">POST CODE* :</label>
+            <span id="spanpostcode"></span>
+            <input type="text" id="pcodeid"  autocomplete="off"/>
+          </div>
+          <div class="pro" id="proid">
+            <label for="province">PROVINCE* :</label>
+            <span id="spanprovince"></span>
+            <select name="province" id="select">
+              <option value="option1">option1</option>
+              <option value="option2">option2</option>
+              <option value="option3">option3</option>
+              <option value="option4">option4</option>
+            </select>
+          </div>
+          <div class="p1">
+            <label for="Name">PRODUCT 1 :</label>
+            <span id="spanproduct01"></span>
+            <input type="number" id="p1id" />
+          </div>
+          <div class="p2">
+            <label for="Name">PRODUCT 2:</label>
+            <span id="spanproduct02"></span>
+            <input type="number" id="p2id" />
+          </div>
+          <div class="p3">
+            <label for="Name">PRODUCT 3:</label>
+            <span id="spanproduct03"></span>
+            <input type="number" id="p3id" />
+          </div>
+          <div class="delivery" id="deliveryid">
+            <label for="delivery" id="">DELIVERY TIME* :</label>
+            <span id="spandelivery"></span>
+            <select name="" id="del">
+              <option value="option1">10 DAYS</option>
+              <option value="option2">5 DAYS</option>
+              <option value="option3">3 DAYS</option>
+            </select>
+          </div>
+          <button id="btn" type="submit">PLACE ORDER</button>
+        </form>
+      </div>
+      <div class="invoice" id="invoice1">
+        <div class="display">
+          <h1>MY SHOP'S INVOICE</h1>
+          <div class="name1">
+            <p>NAME:</p>
+            <p id="invoicename"></p>
+          </div>
+          <div class="email1">
+            <p>EMAIL</p>
+            <p id="invoicemail"></p>
+          </div>
+          <div class="phone1">
+            <p>PHONE</p>
+            <p id="invoicephone"></p>
+          </div>
+          <div class="address1">
+            <p>DELIVERY ADDRESS</p>
+            <p id="invoiceaddress"></p>
+          </div>
+          <div class="pr1">
+            <p id="quantity1"></p>
+            <p style="padding-right: 55%;">PRODUCT 1 @ $10.00</p>
+            <p id="invoicep1"></p>
+          </div>
+          <div class="pr2">
+            <p id="quantity2"></p>
+            <p style="padding-right: 55%;">PRODUCT 2 @ $20.00</p>
+            <p id="invoicep2"></p>
+          </div>
+          <div class="pr3">
+            <p id="quantity3"></p>
+            <p style="padding-right: 55%;">PRODUCT 3 @ $30.00</p>
+            <p id="invoicep3"></p>
+          </div>
+          <div class="shipchrge">
+            <p>SHIPPING CHARGES</p>
+            <p id="invoicecharge"></p>
+          </div>
+          <div class="total">
+            <p>SUB TOTAL</p>
+            <p id="invoicesubtotal"></p>
+          </div>
+          <div class="tax">
+            <p>TAXES</p>
+            <p id="invoicetax"></p>
+          </div>
+          <div class="finaltotal">
+            <p>TOTAL</p>
+            <p id="invoicetotal"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="placeorder.js"></script>
+  </body>
+</html>

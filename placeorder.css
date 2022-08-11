@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+.parent{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    /* justify-content:center; */
+    flex-direction: column;
+    align-items: center;
+  
+}
+.form{
+    width: 60%;
+    height: 85vh;
+    border: 1px solid black;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    
+    padding:  2% 1% 0% 1%;
+  
+  
+}
+form{
+    width: 100%;
+    height: 100%;
+}
+.form input{
+    height: 15px;
+    width: 50%;
+}
+.form div{
+    height: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#btn{
+    margin-left: 28%;
+    height: 10%;
+    width: 40%;
+}
+#select{
+    width:51% ;
+    height: 20px;
+}
+#del{
+    width:51% ;
+    height: 20px;
+}
+
+.invoice{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  
+}
+.display{
+    width:40%;
+    height: auto;
+    border: 1px solid black;
+    padding-left: 1%;
+    padding-right: 1%;
+   
+
+  margin-top: 5%;
+
+
+
+}
+
+.display h1{
+text-decoration: underline;
+text-align: center;
+
+
+}
+.display div{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+span{
+    color: red;
+}
